@@ -14,7 +14,7 @@ export default function Home() {
   const [isLoading, setLoading] = useState(false);
 
   function handleClick() {
-    setUserName(userRef.current.value);
+    setUserName(userRef?.current?.value);
   }
   useEffect(() => {
     setLoading(true);
